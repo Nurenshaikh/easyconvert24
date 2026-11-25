@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Convert PDF, Word, Excel and images online with free, easy-to-use file tools.">
+<meta name="theme-color" content="#155eef">
+<title>ConvertEasy — Free Online PDF, Image, Word & Excel Tools</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.umd.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html"><span class="logo">C</span> ConvertEasy</a><nav><a href="#tools">All tools</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header>
+<main>
+<section class="hero"><div class="eyebrow">SIMPLE • FAST • ONLINE</div><h1>Every file. <span>One easy place.</span></h1><p>Convert, organize and optimize your documents and images — right in your browser whenever possible.</p><a class="primary" href="#tools">Explore free tools <span>→</span></a><div class="trust"><span>✓ No account required</span><span>✓ Browser-based tools</span><span>✓ Files aren't stored by us</span></div></section>
+<section class="search-wrap"><label for="search">What would you like to do?</label><input id="search" placeholder="Search PDF to JPG, compress PDF, Word to PDF..." autocomplete="off"></section>
+<section id="tools" class="tools-section"><div class="section-head"><div><div class="eyebrow">CONVERTEASY TOOLBOX</div><h2>Choose a tool</h2></div><span id="tool-count" class="muted">12 tools</span></div>
+<div class="filters"><button class="filter active" data-filter="all">All tools</button><button class="filter" data-filter="pdf">PDF</button><button class="filter" data-filter="image">Images</button><button class="filter" data-filter="office">Word & Excel</button></div>
+<div class="tool-grid" id="tool-grid">
+<article class="tool" data-cat="pdf" data-tool="jpg-pdf"><div class="tool-icon">🖼️</div><h3>JPG to PDF</h3><p>Turn images into a downloadable PDF.</p><button class="open-tool" data-action="jpg-pdf">Use tool →</button></article>
+<article class="tool" data-cat="pdf" data-tool="pdf-jpg"><div class="tool-icon">📄</div><h3>PDF to JPG</h3><p>Export each PDF page as a JPG image.</p><button class="open-tool" data-action="pdf-jpg">Use tool →</button></article>
+<article class="tool" data-cat="pdf" data-tool="merge"><div class="tool-icon">📚</div><h3>Merge PDF</h3><p>Combine multiple PDF files into one.</p><button class="open-tool" data-action="merge">Use tool →</button></article>
+<article class="tool" data-cat="pdf" data-tool="split"><div class="tool-icon">✂️</div><h3>Split PDF</h3><p>Save selected pages as a new PDF.</p><button class="open-tool" data-action="split">Use tool →</button></article>
+<article class="tool" data-cat="pdf" data-tool="rotate"><div class="tool-icon">🔄</div><h3>Rotate PDF</h3><p>Rotate all pages in a PDF.</p><button class="open-tool" data-action="rotate">Use tool →</button></article>
+<article class="tool" data-cat="pdf" data-tool="compress-pdf"><div class="tool-icon">🗜️</div><h3>Compress PDF</h3><p>Try basic PDF optimization and save.</p><button class="open-tool" data-action="compress-pdf">Use tool →</button></article>
+<article class="tool" data-cat="image" data-tool="png-jpg"><div class="tool-icon">🌄</div><h3>PNG to JPG</h3><p>Convert PNG images to JPG format.</p><button class="open-tool" data-action="png-jpg">Use tool →</button></article>
+<article class="tool" data-cat="image" data-tool="jpg-png"><div class="tool-icon">🎨</div><h3>JPG to PNG</h3><p>Convert JPG images to PNG format.</p><button class="open-tool" data-action="jpg-png">Use tool →</button></article>
+<article class="tool" data-cat="image" data-tool="compress-image"><div class="tool-icon">📉</div><h3>Compress Image</h3><p>Reduce image file size with quality control.</p><button class="open-tool" data-action="compress-image">Use tool →</button></article>
+<article class="tool" data-cat="image" data-tool="resize"><div class="tool-icon">📐</div><h3>Resize Image</h3><p>Change image width and height in pixels.</p><button class="open-tool" data-action="resize">Use tool →</button></article>
+<article class="tool" data-cat="office" data-tool="word-pdf"><div class="tool-icon">📝</div><h3>Word to PDF</h3><p>Convert DOCX documents to PDF.</p><button class="open-tool" data-action="word-pdf">Use tool →</button></article>
+<article class="tool" data-cat="office" data-tool="pdf-word"><div class="tool-icon">📃</div><h3>PDF to Word</h3><p>Extract selectable PDF text into DOCX.</p><button class="open-tool" data-action="pdf-word">Use tool →</button></article>
+<article class="tool" data-cat="office" data-tool="excel-pdf"><div class="tool-icon">📊</div><h3>Excel to PDF</h3><p>Export spreadsheet data as a PDF table.</p><button class="open-tool" data-action="excel-pdf">Use tool →</button></article>
+<article class="tool" data-cat="office" data-tool="pdf-excel"><div class="tool-icon">📈</div><h3>PDF to Excel</h3><p>Extract text into a simple spreadsheet.</p><button class="open-tool" data-action="pdf-excel">Use tool →</button></article>
+</div></section>
+<section class="how"><div><div class="eyebrow">HOW IT WORKS</div><h2>Three simple steps</h2></div><div class="steps"><div><b>01</b><h3>Choose your tool</h3><p>Select the conversion or utility you need.</p></div><div><b>02</b><h3>Add your file</h3><p>Select a supported file from your device.</p></div><div><b>03</b><h3>Download</h3><p>Save your converted file when processing finishes.</p></div></div></section>
+<section class="faq"><h2>Frequently asked questions</h2><details><summary>Are these tools free?</summary><p>Yes. The browser-based tools on this site are free to use.</p></details><details><summary>Are my files uploaded?</summary><p>Most tools process files locally in your browser. If a server conversion option is configured, the site will tell you before sending a file.</p></details><details><summary>Will PDF to Word keep the original layout?</summary><p>Browser-based PDF text extraction focuses on editable text and may not preserve complex formatting, columns, tables or images. Use a dedicated desktop converter for exact layout reproduction.</p></details></section>
+</main>
+<footer><div class="footer-brand"><a class="brand" href="index.html"><span class="logo">C</span> ConvertEasy</a><p>Simple online file tools for everyday tasks.</p></div><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a></div><small>© <span id="year"></span> ConvertEasy. All rights reserved.</small></footer>
+<div class="modal" id="tool-modal" aria-hidden="true"><div class="modal-card"><button class="close" id="close-modal" aria-label="Close">×</button><div class="eyebrow">CONVERTEASY TOOL</div><h2 id="modal-title">Tool</h2><p id="modal-desc" class="muted"></p><div id="tool-controls"></div><div id="status" role="status" aria-live="polite"></div></div></div>
+</body></html>
