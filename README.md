@@ -1,4 +1,4 @@
-# ConvertEasy v2
+# EasyConvert v2
 
 A responsive static website with browser-first file conversion and an optional LibreOffice server API.
 
